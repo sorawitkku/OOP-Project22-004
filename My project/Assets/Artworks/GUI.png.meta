@@ -116,7 +116,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back_butttom
+      name: Start
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 89
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b48128deacb3b44926061ef2f9a1ff
+      internalID: 782605384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 73
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b8322157d8fdd4fb8ee40c7a70934b
+      internalID: 190577350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exit
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 57
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31af68e747e7c5408c964972ac2f081
+      internalID: -689098965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "option\u0E40\u0E1B\u0E25\u0E37\u0E2D\u0E22"
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 131
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4aa73c693de0e2408b8573bb1016e9d
+      internalID: -2067171780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sound
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 116
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4e7a3881a9ed0469bfc0971ef40fb6
+      internalID: -1778343157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back
       rect:
         serializedVersion: 2
         x: 8
@@ -130,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d12b399d77c90468a5707876cb90a5
-      internalID: 1118564561
+      spriteID: 269ab7b238b238749bb18f9219b367a3
+      internalID: -1598394371
       vertices: []
       indices: 
       edges: []
@@ -147,8 +252,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GUI_0: -1416597398
+      Exit: -689098965
+      Sound: -1778343157
       GUI_1: -2147070801
+      option: 190577350
+      "option\u0E40\u0E1B\u0E25\u0E37\u0E2D\u0E22": -2067171780
+      Start: -1416597398
+      Back: -1598394371
       Back_butttom: 1118564561
   spritePackingTag: 
   pSDRemoveMatte: 0
