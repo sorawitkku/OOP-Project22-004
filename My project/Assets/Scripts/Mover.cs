@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Mover : Fighter
 {   
-    //private Animator anim;
+    private Animator anim;
     protected BoxCollider2D boxCollider;
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
@@ -15,6 +15,7 @@ public abstract class Mover : Fighter
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
     }
 
 
@@ -25,9 +26,19 @@ public abstract class Mover : Fighter
 
         //Swap sprite direction, whether you're going left or right
         if (moveDelta.x > 0)
+        {
             transform.localScale = Vector3.one;
+            anim.SetBool("Run", true);
+        }
         else if (moveDelta.x < 0)
+        {
             transform.localScale = new Vector3(-1, 1, 1);
+            anim.SetBool("Run", true);
+        }
+        else 
+        {
+            anim.SetBool("Run", false);
+        }
 
         //Add
         moveDelta += pushDirection;
