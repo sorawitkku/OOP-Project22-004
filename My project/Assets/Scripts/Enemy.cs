@@ -14,6 +14,7 @@ public class Enemy : Mover
     private Transform playerTransform;
     private Vector3 startingPosition;
     public bool chasing;
+    private Animator chas;
 
     //Hitboxs
     public ContactFilter2D filter;
@@ -26,30 +27,36 @@ public class Enemy : Mover
         playerTransform = GameManager.instance.player.transform;
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        chas = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
         if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
-        {
+        {   
+            chas.SetBool("chasing", false);
+            
             if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLength)
             {
-                chasing = true;
+                chasing = true; 
+
                 if(chasing)
-                {
+                {  
+                    chas.SetBool("chasing", true);
                     if (!collidingWithPlayer)
-                    {
+                    {   
                         UpdateMotor((playerTransform.position - transform.position).normalized);
                     }
                 }
                 else
-                {
+                {   
                     UpdateMotor(playerTransform.position - startingPosition);
                 }
             }
         }
         else
         {
+
             UpdateMotor(startingPosition - transform.position);  
             chasing = false;
         }

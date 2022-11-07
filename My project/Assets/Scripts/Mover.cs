@@ -52,7 +52,6 @@ public abstract class Mover : Fighter
         {
             //make thing move
             transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
-            //anim.SetTrigger("Run");
         }
 
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
@@ -60,7 +59,6 @@ public abstract class Mover : Fighter
         {
             //make thing move
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
-            //anim.SetTrigger("Run");
         }
     }
 }
