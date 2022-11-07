@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1102 &-6538489132014521114
 AnimatorState:
   serializedVersion: 6
@@ -27,6 +28,8 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+=======
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
 --- !u!1107 &-3738687233971517652
 AnimatorStateMachine:
   serializedVersion: 6
@@ -38,10 +41,15 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 2256550686950280570}
-    m_Position: {x: 200, y: 0, z: 0}
+    m_Position: {x: 30, y: 190, z: 0}
   - serializedVersion: 1
+<<<<<<< HEAD
     m_State: {fileID: -6538489132014521114}
     m_Position: {x: 280, y: 110, z: 0}
+=======
+    m_State: {fileID: -2856585576129074732}
+    m_Position: {x: 30, y: 270, z: 0}
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -52,12 +60,19 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 2256550686950280570}
+<<<<<<< HEAD
 --- !u!1101 &-3462505392645955458
 AnimatorStateTransition:
+=======
+--- !u!1102 &-2856585576129074732
+AnimatorState:
+  serializedVersion: 6
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
@@ -77,6 +92,27 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+=======
+  m_Name: Run
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 52a8159d90abec0489228cbf485ef292, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -85,7 +121,13 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: P'to 1
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: Run
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -99,26 +141,40 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+<<<<<<< HEAD
 --- !u!1101 &1414540350465597548
+=======
+--- !u!1101 &1993497965914516941
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
+<<<<<<< HEAD
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: run
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6538489132014521114}
+=======
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -2856585576129074732}
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
+<<<<<<< HEAD
   m_ExitTime: 0.64285713
+=======
+  m_ExitTime: 0.57142854
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -131,11 +187,15 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
+<<<<<<< HEAD
   - {fileID: 1414540350465597548}
+=======
+  - {fileID: 1993497965914516941}
+>>>>>>> 6b860d28c9544a918fa071c2436dee2ed2a50ecf
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
