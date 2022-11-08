@@ -24,8 +24,7 @@ public class Fighter : MonoBehaviour
             lastImmune = Time.time;
             hitpoint -= dmg.damageAmounts;
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
-
-            
+        
             GameManager.instance.ShowText(dmg.damageAmounts.ToString(), 15, Color.red, transform.position, Vector3.zero, 0.5f);
 
             if (hitpoint <= 0)

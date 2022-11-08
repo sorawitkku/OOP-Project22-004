@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/sc1_maze1.unity
     guid: 122d75bb09a474accb3530f3b1be20d5
+  - enabled: 1
+    path: Assets/Scenes/sc2_puzzle 4.unity
+    guid: 5fc4b6801a3172349afaa288e8bb3c6d
+  - enabled: 1
+    path: Assets/Scenes/sc2_puzzle 1.unity
+    guid: 5c5252b7bb474e9479bbc95aff9338a9
+  - enabled: 1
+    path: Assets/Scenes/sc2_puzzle 2.unity
+    guid: 9f9c69ad8a212b0409d49984800fef8c
+  - enabled: 1
+    path: Assets/Scenes/sc2_puzzle 3.unity
+    guid: 8f2afae58e67e074a9331000feaf291d
   m_configObjects: {}
