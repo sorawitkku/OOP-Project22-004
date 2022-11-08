@@ -113,6 +113,8 @@ public class GameManager : MonoBehaviour
 
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
+        player.transform.position = new Vector3(0, 0 ,0);
+
         
     }
 }
