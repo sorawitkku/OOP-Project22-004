@@ -16,18 +16,20 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
     }
     //resoures
     public List<Sprite> playerSprite;
     public List<Sprite> weaponSprite;
     public List<int> weaponPrices;
     public List<int> xpTable;
+    public Animator deathMenu;
+
 
     //reference
     public Player player;
     public Weapon weapon;
     public FloatingTextManager text;
+    public RectTransform hpBar;
 
 
     //logic
@@ -54,6 +56,12 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    //HP bar
+    public void OnHitPointChange() 
+    { 
+        float ratio = (float)player.hitpoint / (float)player.maxHitpoints;
+        hpBar.localScale = new Vector3(ratio, 1, 1);
+    }
     //exp
     public int GetCurrentLevel()
     {
@@ -117,4 +125,12 @@ public class GameManager : MonoBehaviour
 
         
     }
+
+    public void Respawn()
+    {
+        deathMenu.SetTrigger("hide");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("UI_entry");
+    }
 }
+
+

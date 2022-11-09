@@ -9,7 +9,7 @@ public abstract class Mover : Fighter
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
     protected float ySpeed = 0.75f;
-    protected float xSpeed = 1.0f;
+    protected float xSpeed = 1.5f;
 
 
     protected virtual void Start()
